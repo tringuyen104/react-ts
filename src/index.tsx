@@ -10,6 +10,6 @@ const root = createRoot(container!) //if you use TypeScript
 root.render(
     <BrowserRouter>
         <App />
-        <AppRouter />
+        {/* <AppRouter /> */}
     </BrowserRouter>
 );
