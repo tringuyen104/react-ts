@@ -35,7 +35,7 @@ const HomePage = ({ message, children }: HomePageProps) => {
         <div className='homepage'>
             <div className="row">
                 {
-                    !_.isEmpty(products) && products.map(p => (
+                    _.isEmpty(products) ? <p>This is site deployed to AWS Amplify</p> : products.map(p => (
                         <React.Fragment key={p.id}>
                             <CardShop item={p} />
                         </React.Fragment>

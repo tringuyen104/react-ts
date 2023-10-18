@@ -5,7 +5,7 @@ const headers = {
     'Access-Control-Allow-Origin': '*'
 }
 
-const rootUrl = 'http://ec2-100-26-141-197.compute-1.amazonaws.com/';
+const rootUrl = 'http://ec2-34-229-96-94.compute-1.amazonaws.com/';
 
 export function get(url: string) {
     return axios.get(`${rootUrl}${url}`, { headers: headers });
