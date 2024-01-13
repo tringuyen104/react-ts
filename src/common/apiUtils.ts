@@ -1,11 +1,13 @@
 import axios from "axios";
 
 const headers = {
-    'Content-Type': 'application/json',
+    'Content-Type': 'application/json;charset=utf-8;',
+    // 'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8',
     'Access-Control-Allow-Origin': '*'
 }
 
-const rootUrl = 'http://ec2-34-229-96-94.compute-1.amazonaws.com/';
+const rootUrl = 'https://localhost:7275/';
+// const rootUrl = 'http://localhost:5051/';
 
 export function get(url: string) {
     return axios.get(`${rootUrl}${url}`, { headers: headers });

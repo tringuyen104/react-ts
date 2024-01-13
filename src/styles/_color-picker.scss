@@ -1,0 +1,19 @@
+.color-picker {
+    .color-picker__button {
+        border-radius: 50%;
+        width: 20px;
+        height: 20px;
+        border: 1px solid #000;
+        margin: 0 5px;
+        cursor: pointer;
+    }
+
+    .color-picker__popup {
+        position: absolute;
+        z-index: 2;
+
+        .color-picker__popup__content {
+            position: fixed;
+        }
+    }
+}
